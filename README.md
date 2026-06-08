@@ -1,2 +1,216 @@
-# FIRST-WBSITE
-A WEBSITE PF CARS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Vintage Garage</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Arial, sans-serif;
+background-image:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+}
+
+/* Navigation Bar */
+
+nav{
+background:rgba(0,0,0,0.8);
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#ff3c3c;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#ff3c3c;
+}
+
+/* Hero Section */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:rgba(0,0,0,0.5);
+}
+
+.hero h1{
+font-size:60px;
+color:#ff3c3c;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:800px;
+margin-bottom:30px;
+}
+
+.btn{
+padding:12px 25px;
+background:#ff3c3c;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-size:18px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+color:#ff3c3c;
+}
+
+/* Cars Section */
+
+.section{
+padding:60px 20px;
+background:rgba(0,0,0,0.8);
+}
+
+.section h2{
+text-align:center;
+font-size:40px;
+margin-bottom:30px;
+color:#ff3c3c;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.card{
+width:300px;
+background:white;
+color:black;
+border-radius:10px;
+overflow:hidden;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+}
+
+.card p{
+padding:0 15px 15px;
+text-align:left;
+}
+
+/* Footer */
+
+footer{
+background:black;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Vintage Garage</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Cars</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>The Vintage Garage</h1>
+
+<p>
+Discover legendary classic cars, timeless designs, and the stories behind the world's most iconic automobiles.
+</p>
+
+<a href="#" class="btn">Explore Collection</a>
+</section>
+
+<section class="section">
+
+<h2>Featured Classics</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7">
+<h3>1967 Ford Mustang</h3>
+<p>A symbol of American muscle and performance.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a">
+<h3>Chevrolet Camaro</h3>
+<p>One of the most celebrated muscle cars ever built.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
+<h3>Porsche 911 Classic</h3>
+<p>A timeless masterpiece of engineering and design.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 The Vintage Garage | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
